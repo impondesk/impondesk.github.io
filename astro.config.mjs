@@ -7,8 +7,9 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://impondesk.github.io',
+  // base: '/',
   integrations: [mdx(), sitemap(), tailwind({
-	config: { applyBaseStyles: false },
+    config: { applyBaseStyles: false },
   })]
 });
