@@ -5,6 +5,8 @@ author: "impondesk"
 date: "09 Aug 2022"
 ---
 
+<main class="max-w-7xl mx-auto">
+
 The Azure cloud services are trained and created to deploy and manage even complex apps, through virtual infrastructure. It supports various programming languages, devices, databases, operating systems, and extensive frameworks. Therefore, Azure services intended for the professionals and enterprises offer all-around alternatives to the traditional means of organizational processes, with top **Azure services** greatly improving the performance.
 
 # Azure Active Directory
@@ -70,6 +72,4 @@ A virtual machine is generally called an image, a file that can behave like an a
 Using Hypervisor’s management, Microsoft Azure also enables running multiple virtual machines on the same physical computer. Each virtual machine has its own virtual hardware along with specifications for CPU, memory, hard drive, network, etc. Virtual Machines can reduce the cost of investing in physical machines along with the added maintenance cost, power charges, and cooling facilities.
 
 
-
-
-
+</main>

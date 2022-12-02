@@ -1,4 +1,16 @@
 /* The integration's default injected base.css file */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+html, body {
+    font-family: 'Poppins' !important;
+}
+
+a {
+    text-decoration: none;
+}
+
