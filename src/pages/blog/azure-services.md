@@ -1,8 +1,15 @@
 ---
 layout: ../../layouts/BaseLayout.astro
-title: "Azure Services"
-author: "impondesk"
-date: "09 Aug 2022"
+
+title: 'Azure Services'
+date: '2021-01-12'
+lastmod: '2021-02-01'
+tags: ['Microsoft', 'Azure', 'Cloud Native']
+draft: false
+summary: 'Looking for a performant, out of the box template, with all the best in web technology to support your blogging needs? Checkout the Tailwind Nextjs Starter Blog template.'
+images: ['/static/images/canada/mountains.jpg', '/static/images/canada/toronto.jpg']
+authors: ['default', 'impondesk']
+slug: 'azure-services'
 ---
 
 <main class="max-w-7xl mx-auto">
