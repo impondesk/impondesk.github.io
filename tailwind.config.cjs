@@ -4,5 +4,10 @@ module.exports = {
 	theme: {
 		extend: {},
 	},
-	plugins: [],
+	plugins: [
+		'@tailwindcss/typography',
+		'@tailwindcss/forms',
+		'@tailwindcss/aspect-ratio',
+		'@tailwindlabs/lorem'
+	],
 }
