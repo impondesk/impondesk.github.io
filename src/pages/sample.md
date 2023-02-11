@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BaseLayout.astro
+layout: ../layouts/BaseLayout.astro
 # title: "Hello!"
 # author: "impondesk"
 # date: "09 Aug 2022"
