@@ -4,11 +4,11 @@ layout: ../../layouts/BaseLayout.astro
 title: 'Microfrontends: Microservices for the Frontend'
 date: '2021-01-12'
 lastmod: '2021-02-01'
-tags: ['Microservices', 'Decomposition']
+tags: ['Microservices', 'Decomposition', 'Frontend', 'Angular', 'React']
 draft: false
 summary: 'Applying microservice patterns to the frontend yields microfrontends. With them, we get the benefits of microservices in the frontend.'
 images: ['/static/images/canada/mountains.jpg', '/static/images/canada/toronto.jpg']
-authors: ['default', 'impondesk']
+authors: ['impondesk']
 slug: 'mfe'
 ---
 

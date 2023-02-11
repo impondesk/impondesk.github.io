@@ -1,11 +1,17 @@
 ---
 import NavigationHeader from '../components/NavigationHeader.astro';
+import Sidebar from './Sidebar.astro';
+
+const { frontmatter } = Astro.props;
+
+import '../styles/main.css';
+
 
 export interface Props {
 	title: string;
 }
 
-const { title } = Astro.props;
+// const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -15,13 +21,42 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<!-- <title>{title}</title> -->
 	</head>
-	<body class="">
-		<NavigationHeader></NavigationHeader>
+
+	<!-- bg-gradient-to-b-1 from-gray-50 to-gray-200 -->
+	<!-- absolute inset-0 bg-grid-slate-900/[0.04] bg-[bottom_1px_center] dark:bg-grid-slate-400/[0.05] dark:bg-bottom dark:border-b dark:border-slate-100/5 -->
+	<!-- antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900 -->
+	<body class="bg-gradient-to-r from-gray-700 via-gray-900 to-black text-gray-400">
+
 		<main class="max-w-7xl mx-auto">
+
+			<!-- bg-gradient-to-b-1 from-gray-50 to-gray-200 -->
+			<div class="">
+		
+			  <div class="2xl:max-w-7xl mx-auto">
+				<div class="grid grid-cols-1 lg:grid-cols-4">
+				  <Sidebar />
+		
+				  <div class="w-full lg:col-span-3 ">
+					<!-- text-base font-light leading-relaxed mt-0 mb-4 text-gray-800 max-w-full mx-auto -->
+					<!-- <h1>{frontmatter.title}</h1>
+					<h3>{frontmatter.author}</h3> -->
+					<slot />
+				  </div>
+				  
+				</div>
+			  </div>
+		
+			</div>
+		
+			</main>
+
+			
+		<!-- <NavigationHeader></NavigationHeader> -->
+		<!-- <main class="max-w-7xl mx-auto">
 			<slot />
-		</main>
+		</main> -->
 		
 	</body>
 </html>

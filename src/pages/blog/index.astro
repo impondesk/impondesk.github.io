@@ -7,14 +7,32 @@ import Layout from "../../layouts/Layout.astro";
 
 import '../../styles/main.css';
 
-title: 'Azure Services'
-author: 'impondesk'
+// title: 'Azure Services'
+// author: 'impondesk'
+
+
+// layout: ../../layouts/BaseLayout.astro
+
+title: 'Microsoft Azure Services'
+date: '2021-01-12'
+lastmod: '2021-02-01'
+tags: ['Microsoft', 'Azure', 'Cloud Native']
+draft: false
+summary: 'Microsoft Azure, often referred to as Azure, is a cloud computing platform operated by Microsoft that provides access, management, and development of applications and services via around the world-distributed data centers.'
+images: ['/static/images/canada/mountains.jpg', '/static/images/canada/toronto.jpg']
+authors: ['default', 'impondesk']
+slug: 'azure-services'
 
 // Import multiple files with Astro.glob
 const posts = await Astro.glob('./*.md');
 ---
 
 <Layout title="Blog">
+
+  <h1 class="text-white dark:text-black text-2xl md:text-4xl xl:text-8xl font-bold">
+    <small class="font-extrabold text-transparent text-8xl bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">Blog</small>
+    <span class="block text-3xl text-gray-500">impondesk<span class="text-3xl">.</span></span>
+  </h1>
 
 <ul class="list-none">
 
@@ -40,7 +58,7 @@ const posts = await Astro.glob('./*.md');
       <div class="space-y-3 xl:col-span-3">
         <div>
           <h2 class="text-2xl font-bold leading-8 tracking-tight">
-            <a href={`/blog/${post.frontmatter.slug}`} class="text-gray-900 dark:text-gray-100">{post.frontmatter.title}</a>
+            <a href={`/blog/${post.frontmatter.slug}`} class="text-gray-200 dark:text-gray-100">{post.frontmatter.title}</a>
           </h2>
           <div class="flex flex-wrap -mt-3">
             {post.frontmatter.tags.map((tag) => (
@@ -53,7 +71,7 @@ const posts = await Astro.glob('./*.md');
           {post.frontmatter.summary}
         </div>
         
-        <div class="text-base font-medium leading-6"><a class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400" aria-label="Read &quot;New features in v1&quot;" href={`/blog/${post.frontmatter.slug}`}>Read more →</a></div>
+        <div class="text-base font-medium leading-6"><a class="text-sky-500 hover:text-sky-600 dark:hover:text-sky-400" aria-label="Read &quot;New features in v1&quot;" href={`/blog/${post.frontmatter.slug}`}>Read more →</a></div>
 
       </div>
     </article>

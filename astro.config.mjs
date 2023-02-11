@@ -39,6 +39,11 @@ import image from "@astrojs/image";
 // https://astro.build/config
 import prefetch from "@astrojs/prefetch";
 
+import compress from "astro-compress";
+import sitemap from 'astro-sitemap';
+
+
+
 // https://astro.build/config
 export default defineConfig({
   // devOptions: {
@@ -47,6 +52,7 @@ export default defineConfig({
   markdown: {
     drafts: true
   },
+  site: 'https://impondsk.com',
   integrations: [tailwind({
     config: {
       applyBaseStyles: false,
@@ -60,5 +66,5 @@ export default defineConfig({
     // rehypePlugins: [rehypeMinifyHtml],
     // remarkRehype: { footnoteLabel: 'Footnotes' },
     gfm: false,
-  }), react(), svelte(), htmlBeautifier(), preact(), image(), prefetch()]
+  }), react(), svelte(), htmlBeautifier(), preact(), image(), prefetch(), compress(), sitemap()]
 });

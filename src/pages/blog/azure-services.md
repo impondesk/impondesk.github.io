@@ -8,7 +8,7 @@ tags: ['Microsoft', 'Azure', 'Cloud Native']
 draft: false
 summary: 'Microsoft Azure, often referred to as Azure, is a cloud computing platform operated by Microsoft that provides access, management, and development of applications and services via around the world-distributed data centers.'
 images: ['/static/images/canada/mountains.jpg', '/static/images/canada/toronto.jpg']
-authors: ['default', 'impondesk']
+authors: ['impondesk']
 slug: 'azure-services'
 ---
 
