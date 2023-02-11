@@ -1,5 +1,14 @@
 import { defineConfig } from 'astro/config';
 
+// import remarkToc from 'https://esm.sh/remark-toc@8'
+
+// import {read} from 'to-vfile'
+// import {remark} from 'remark'
+// import remarkToc from 'remark-toc'
+
+// import astroRemark from '@astrojs/markdown-remark';
+
+
 // https://astro.build/config
 import tailwind from "@astrojs/tailwind";
 
@@ -44,6 +53,12 @@ export default defineConfig({
       path: './tailwind.config.cjs'
     }
   }), mdx({
-    drafts: true
+    drafts: true,
+    // syntaxHighlight: 'shiki',
+    // shikiConfig: { theme: 'dracula' },
+    // remarkPlugins: [remarkToc],
+    // rehypePlugins: [rehypeMinifyHtml],
+    // remarkRehype: { footnoteLabel: 'Footnotes' },
+    gfm: false,
   }), react(), svelte(), htmlBeautifier(), preact(), image(), prefetch()]
 });

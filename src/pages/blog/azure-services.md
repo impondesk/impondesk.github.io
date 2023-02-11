@@ -1,18 +1,20 @@
 ---
 layout: ../../layouts/BaseLayout.astro
 
-title: 'Azure Services'
+title: 'Microsoft Azure Services'
 date: '2021-01-12'
 lastmod: '2021-02-01'
 tags: ['Microsoft', 'Azure', 'Cloud Native']
 draft: false
-summary: 'Looking for a performant, out of the box template, with all the best in web technology to support your blogging needs? Checkout the Tailwind Nextjs Starter Blog template.'
+summary: 'Microsoft Azure, often referred to as Azure, is a cloud computing platform operated by Microsoft that provides access, management, and development of applications and services via around the world-distributed data centers.'
 images: ['/static/images/canada/mountains.jpg', '/static/images/canada/toronto.jpg']
 authors: ['default', 'impondesk']
 slug: 'azure-services'
 ---
 
 <main class="max-w-7xl mx-auto">
+
+<!-- <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Desktop-hero_jan?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1920&qlt=75" /> -->
 
 The Azure cloud services are trained and created to deploy and manage even complex apps, through virtual infrastructure. It supports various programming languages, devices, databases, operating systems, and extensive frameworks. Therefore, Azure services intended for the professionals and enterprises offer all-around alternatives to the traditional means of organizational processes, with top **Azure services** greatly improving the performance.
 
