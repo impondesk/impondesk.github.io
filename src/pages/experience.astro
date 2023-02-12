@@ -10,30 +10,35 @@ const data = [
 		"summary": "CitiusTech is a specialised provider of healthcare technology and business process services to healthcare technology companies, healthcare providers, managed care organisations, health plans, and disease management companies. At CitiusTech, we play a deep and meaningful role in powering the future of healthcare worldwide. We accelerate digital innovation in healthcare through specialised solutions, scalable platforms and out-of-the-box accelerators.",
 		date: "Oct 2018 - Present",
 		designation: "Sr. Solution Architect II",
+		link: "https://citiustech.com/"
 	},
 	{
 		"org": "Dure Technologies",
 		"summary": "Dure Technologies is a multinational technology enterprise with offices in Switzerland and India. It has a portfolio of innovative technology products and solutions for public health and social development sector. Dure has been implementing digital innovation projects for UN agencies like WHO, UNAIDS, UNICEF, UNOPS, to large donor organisations like The Global Fund, USAID, Bill & Melinda Gates Foundation, and to global implementation partners like Save the Children International, FHI 360, just to name a few.",
 		date: "Dev 2013 - Jan 2018",
 		designation: "Head Product Development",
+		link: "https://duretechnologies.com/"
 	},
 	{
 		"org": "Cognizant",
 		"summary": "Cognizant (Nasdaq-100: CTSH) is one of the world's leading professional services companies, transforming clients'​ business, operating & technology models for the digital era. We strategize design to deployment for e-Event Compliance Solution.",
 		date: "Jun 2011 - Dec 2013",
-		designation: "Sr. Solution Architect II",
+		designation: "Technical Architect, CRM Consultant",
+		link: "https://www.cognizant.com/"
 	},
 	{
 		"org": "Incessant",
 		"summary": "Incessant is one of the largest ‘Pure Play’ BPM Services Vendors, specializing in this field with a strong focus on Pega with unique and combined expertise in the platforms, provides CRM, Case Management, RPA, and Decisioning solutions that transform organizations into the digital businesses.",
 		date: "Apr 2010 - Jun 2011",
-		designation: "Sr. Solution Architect II",
+		designation: "BPM Expert",
+		link: "https://incessanttechnologies.com/"
 	},
 	{
 		"org": "Mphasis - an HP Company",
 		"summary": "Mphasis Limited is an Indian multinational information technology services and consulting company based in Bengaluru. The company provides infrastructure technology and applications outsourcing services, as well as architecture guidance, application development and integration, and application management services.",
 		date: "Jul 2006 - Mar 2010",
-		designation: "Sr. Solution Architect II",
+		designation: "Java Lead",
+		link: "https://www.mphasis.com/"
 	},
 ];
 
@@ -84,9 +89,9 @@ const data = [
 								<article class="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
 									<div class="space-y-3 xl:col-span-3">
 										<div>
-											<h2 class="text-2xl font-bold leading-8 tracking-tight">
+											<h2 class="text-2xl font-bold leading-8">
 												<a
-													href={`/blog/${item}`}
+													href={`${item.link}`} target="_blank"
 													class="text-gray-200 dark:text-gray-100 block"
 												>
 													{item.org}
