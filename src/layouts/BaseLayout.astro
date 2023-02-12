@@ -22,29 +22,69 @@ import Sidebar from './Sidebar.astro';
         <div class="grid grid-cols-1 lg:grid-cols-4">
           <Sidebar />
 
-          <div class="w-full lg:col-span-3 container page shadow-1 m-b-160 shadow-2xl">
+          <div class="w-full lg:col-span-3 container page shadow-1 m-b-160 shadow-2xl-0">
             <!-- text-base font-light leading-relaxed mt-0 mb-4 text-gray-800 max-w-full mx-auto -->
+
+            <div class="p-5 mx-auto sm:p-10 md:p-16 dark:bg-gray-800 dark:text-gray-100">
+              <div class="flex flex-col max-w-5xl mx-auto overflow-hidden rounded">
+                <img src={frontmatter.image} alt="" class="w-full h-60 sm:h-96 bg-gray-500">
+                <div class="p-6 pb-12 m-4 mx-auto -mt-16 space-y-6 lg:max-w-2xl sm:px-10 sm:mx-12 lg:rounded-md bg-gray-900">
+                  <span class="bg-blue-100 hover:bg-blue-200 text-blue-800 text-md text-zinc-500 dark:text-zinc-400 font-extrabold max-w-min pl-2 pr-2 rounded">{frontmatter.category}</span>
+                  <div class="space-y-2 shadow-3xl">
+                    <a rel="noopener noreferrer" href="#" class="inline-block text-2xl font-semibold sm:text-3xl mb-0	 mt-6 text-black dark:text-white font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600" style="margin-top:0px;">{frontmatter.title}</a>
+                    <p class="text-xs dark:text-gray-400">By
+                      <a rel="noopener noreferrer" href="#" class="text-xs hover:underline">{frontmatter.authors} • {frontmatter.date}</a>
+                    </p>
+                  </div>
+                  <div class="dark:text-gray-100">
+                    <p>{frontmatter.summary}</p>
+                  </div>
+
+                  <div class="flex flex-wrap space-x-2 text-sm dark:text-gray-400">
+                    {frontmatter.tags.map((tag) => (
+                      // <a class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">{tag}</a>
+                      // <a href="#" class="bg-blue-100 hover:bg-blue-200 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 dark:hover:bg-blue-300">{tag}</a>
+                        <a rel="noopener noreferrer text-white hover:text-white visited:text-white" href=`/tag/${tag}` class="p-1 hover:underline">#{tag}</a>              
+                    ))}
+                  </div>
+
+                </div>
+              </div>
+            </div>
             
             <header class="flex flex-col">
-              <span class="bg-blue-100 hover:bg-blue-200 text-blue-800 text-md text-zinc-500 dark:text-zinc-400 font-extrabold max-w-min pl-2 pr-2 rounded">{frontmatter.category}</span>
+              <!-- <span class="bg-blue-100 hover:bg-blue-200 text-blue-800 text-md text-zinc-500 dark:text-zinc-400 font-extrabold max-w-min pl-2 pr-2 rounded">{frontmatter.category}</span> -->
               
                 <!-- <a href="#" class=" text-xs font-semibold mr-2 px-2.5 py-0.5 dark:bg-blue-200 dark:text-blue-800 dark:hover:bg-blue-300 font-extrabold">{frontmatter.category}</a> -->
             
-              <h1 class="mt-6 text-black dark:text-white sm:text-7xl font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">{frontmatter.title}
-                <span class="block text-xl text-zinc-500 dark:text-zinc-400 font-thin">By {frontmatter.authors} | Published on <time
+              <!-- <h1 class="mb-0	 mt-6 text-black dark:text-white sm:text-7xl font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">{frontmatter.title}
+                <span class="block text-xl text-white font-thin">By {frontmatter.authors} | Published on <time
                   datetime="2022-09-05"
-                  class="order-first text-xl text-zinc-500 dark:text-zinc-400"
+                  class="order-first"
                 >
                   <span>{frontmatter.date}</span>
                 </time>
               </span>
-              </h1>
+              </h1> -->
               
+              <!-- <div class="flex flex-wrap space-x-2 text-sm dark:text-gray-400">
+                <a rel="noopener noreferrer" href="#" class="p-1 hover:underline">#MambaUI</a>
+                <a rel="noopener noreferrer" href="#" class="p-1 hover:underline">#TailwindCSS</a>
+                <a rel="noopener noreferrer" href="#" class="p-1 hover:underline">#Angular</a>
+              </div> -->
               
             </header>
 
 
             <slot />
+
+            <div class="flex items-center mt-8 space-x-4">
+              <img src="https://sorcererhat.com/images/about/memoji_felipe.png" alt="" class="w-10 h-10 rounded-full dark:bg-gray-500">
+              <div>
+                <h3 class="text-sm font-medium">{frontmatter.authors}</h3>
+                <time datetime="2021-02-18" class="text-sm dark:text-gray-400">{frontmatter.date}</time>
+              </div>
+            </div>
           </div>
           
         </div>
@@ -56,14 +96,6 @@ import Sidebar from './Sidebar.astro';
       
         <!-- <NavigationHeader></NavigationHeader> -->
   
-  
-
-  
-
-  
-  
-
-    </main>
 
     
 

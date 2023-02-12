@@ -11,6 +11,7 @@ summary: 'Microsoft Azure, often referred to as Azure, is a cloud computing plat
 images: ['/static/images/canada/mountains.jpg', '/static/images/canada/toronto.jpg']
 authors: ['impondesk']
 slug: 'azure-services'
+image: 'https://images.unsplash.com/photo-1570063578733-6a33b69d1439?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80'
 ---
 
 <main class="max-w-7xl mx-auto">
