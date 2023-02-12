@@ -25,3 +25,7 @@ a {
     padding: 80px 80px 120px;
     /* background-color: #fff; */
 }
+
+a {
+    @apply text-blue-600 hover:text-white visited:text-blue-500
+ }
