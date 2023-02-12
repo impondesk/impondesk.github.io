@@ -14,3 +14,14 @@ a {
     text-decoration: none;
 }
 
+.page {
+    display: block;
+    width: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 80px 80px 120px;
+    /* background-color: #fff; */
+}

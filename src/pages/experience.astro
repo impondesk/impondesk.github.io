@@ -2,21 +2,45 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 
-import '../styles/main.css';
+import "../styles/main.css";
 
 const data = [
-	{"o": "CitiusTech Healthcare Technology Pvt. Ltd.", "s": "CitiusTech is a specialised provider of healthcare technology and business process services to healthcare technology companies, healthcare providers, managed care organisations, health plans, and disease management companies. At CitiusTech, we play a deep and meaningful role in powering the future of healthcare worldwide. We accelerate digital innovation in healthcare through specialised solutions, scalable platforms and out-of-the-box accelerators.", "date": "Oct 2018 - Present", "designation": "Sr. Solution Architect II"},
-	{"o": "Dure Technologies", "s": "Dure Technologies is a multinational technology enterprise with offices in Switzerland and India. It has a portfolio of innovative technology products and solutions for public health and social development sector. Dure has been implementing digital innovation projects for UN agencies like WHO, UNAIDS, UNICEF, UNOPS, to large donor organisations like The Global Fund, USAID, Bill & Melinda Gates Foundation, and to global implementation partners like Save the Children International, FHI 360, just to name a few."},
-	{"o": "Cognizant", "s": "Cognizant (Nasdaq-100: CTSH) is one of the world's leading professional services companies, transforming clients'​ business, operating & technology models for the digital era. We strategize design to deployment for e-Event Compliance Solution."},
-	{"o": "Incessant", "s": "Incessant is one of the largest ‘Pure Play’ BPM Services Vendors, specializing in this field with a strong focus on Pega with unique and combined expertise in the platforms, provides CRM, Case Management, RPA, and Decisioning solutions that transform organizations into the digital businesses."},
-	{"o": "Mphasis - an HP Company", "s": "Mphasis Limited is an Indian multinational information technology services and consulting company based in Bengaluru. The company provides infrastructure technology and applications outsourcing services, as well as architecture guidance, application development and integration, and application management services."}
-]
+	{
+		"org": "CitiusTech Healthcare Technology Pvt. Ltd.",
+		"summary": "CitiusTech is a specialised provider of healthcare technology and business process services to healthcare technology companies, healthcare providers, managed care organisations, health plans, and disease management companies. At CitiusTech, we play a deep and meaningful role in powering the future of healthcare worldwide. We accelerate digital innovation in healthcare through specialised solutions, scalable platforms and out-of-the-box accelerators.",
+		date: "Oct 2018 - Present",
+		designation: "Sr. Solution Architect II",
+	},
+	{
+		"org": "Dure Technologies",
+		"summary": "Dure Technologies is a multinational technology enterprise with offices in Switzerland and India. It has a portfolio of innovative technology products and solutions for public health and social development sector. Dure has been implementing digital innovation projects for UN agencies like WHO, UNAIDS, UNICEF, UNOPS, to large donor organisations like The Global Fund, USAID, Bill & Melinda Gates Foundation, and to global implementation partners like Save the Children International, FHI 360, just to name a few.",
+		date: "Dev 2013 - Jan 2018",
+		designation: "Head Product Development",
+	},
+	{
+		"org": "Cognizant",
+		"summary": "Cognizant (Nasdaq-100: CTSH) is one of the world's leading professional services companies, transforming clients'​ business, operating & technology models for the digital era. We strategize design to deployment for e-Event Compliance Solution.",
+		date: "Jun 2011 - Dec 2013",
+		designation: "Sr. Solution Architect II",
+	},
+	{
+		"org": "Incessant",
+		"summary": "Incessant is one of the largest ‘Pure Play’ BPM Services Vendors, specializing in this field with a strong focus on Pega with unique and combined expertise in the platforms, provides CRM, Case Management, RPA, and Decisioning solutions that transform organizations into the digital businesses.",
+		date: "Apr 2010 - Jun 2011",
+		designation: "Sr. Solution Architect II",
+	},
+	{
+		"org": "Mphasis - an HP Company",
+		"summary": "Mphasis Limited is an Indian multinational information technology services and consulting company based in Bengaluru. The company provides infrastructure technology and applications outsourcing services, as well as architecture guidance, application development and integration, and application management services.",
+		date: "Jul 2006 - Mar 2010",
+		designation: "Sr. Solution Architect II",
+	},
+];
 
 // await fetch('experiences.json').then((response) => {
 // 	console.log(response);
 // 	response.json();
 // });
-
 
 // const posts = await Astro.glob("./*.mdx");
 ---
@@ -35,54 +59,61 @@ const data = [
 </main>
 
 </Layout> -->
-
 <Layout title="@impondesk">
-
 	<main class="max-w-7xl mx-auto">
-
-		<h1 class="text-white dark:text-black text-2xl md:text-4xl xl:text-8xl font-bold">
-			<small class="font-extrabold text-transparent text-8xl bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">Experience</small>
-			<span class="block text-3xl text-gray-500">impondesk<span class="text-3xl">.</span></span>
-		  </h1>
+		<h1
+			class="text-white dark:text-black text-2xl md:text-4xl xl:text-8xl font-bold"
+		>
+			<small
+				class="font-extrabold text-transparent text-8xl bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600"
+				>Experience</small
+			>
+			<span class="block text-3xl text-gray-500"
+				>impondesk<span class="text-3xl">.</span>
+			</span>
+		</h1>
 
 		<section class="pt-10 overflow-hidden md:pt-0 sm:pt-16 2xl:pt-16">
-			
-
 			<ul class="list-none">
+				{
+					data.map((item) => {
+						console.log(item);
 
-			{data.map(item => {
-
-				console.log(item);
-				
-				return <li key="slug" class="py-4">
-				<article class="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
-				  
-				  <div class="space-y-3 xl:col-span-3">
-					<div>
-					  <h2 class="text-2xl font-bold leading-8 tracking-tight">
-						<a href={`/blog/${item}`} class="text-gray-200 dark:text-gray-100">{item.o}</a>
-						<span class="block text-gray-500 text-sm">{item.designation}</span>
-						<span class="text-gray-500 text-sm">{item.date}</span>
-					  </h2>
-					</div>
-					<div class="prose max-w-none text-gray-500 dark:text-gray-400">
-						<span class="block text-sm">{item.s}</span>
-					</div>
-			
-				  </div>
-				</article>
-			  </li>}
-			  )}
-
-			  </ul>
-
+						return (
+							<li key="slug" class="py-4">
+								<article class="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
+									<div class="space-y-3 xl:col-span-3">
+										<div>
+											<h2 class="text-2xl font-bold leading-8 tracking-tight">
+												<a
+													href={`/blog/${item}`}
+													class="text-gray-200 dark:text-gray-100 block"
+												>
+													{item.org}
+												</a>
+												<span class="text-gray-500 text-sm">
+													{item.designation},
+												</span>
+												<span class="text-gray-500 text-sm">
+													{item.date}
+												</span>
+											</h2>
+										</div>
+										<div class="prose max-w-none text-gray-500 dark:text-gray-400">
+											<span class="block text-md">
+												{item.summary}
+											</span>
+										</div>
+									</div>
+								</article>
+							</li>
+						);
+					})
+				}
+			</ul>
 		</section>
 
-
-		
-
-		
-			<!-- <div class="px-4 mx-auto sm:px-6 lg:px-8 ">
+		<!-- <div class="px-4 mx-auto sm:px-6 lg:px-8 ">
 				<div class="grid items-center grid-cols-1 md:grid-cols-2">
 					<div>
 						<h2 class="text-xl font-base leading-tight text-black sm:text-4xl lg:text-5xl">👋 I am <br class="block sm:hidden font-extrabold" />Israni Murli</h2>
@@ -97,8 +128,6 @@ const data = [
 					</div>
 				</div>
 			</div> -->
-		
-
 
 		<!-- <section class="py-10 sm:py-16 lg:py-24">
 			<div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -133,7 +162,5 @@ const data = [
 				</div>
 			</div>
 		</section> -->
-		
 	</main>
-
 </Layout>

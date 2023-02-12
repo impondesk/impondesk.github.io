@@ -22,20 +22,25 @@ import Sidebar from './Sidebar.astro';
         <div class="grid grid-cols-1 lg:grid-cols-4">
           <Sidebar />
 
-          <div class="w-full lg:col-span-3 ">
+          <div class="w-full lg:col-span-3 container page shadow-1 m-b-160 shadow-2xl">
             <!-- text-base font-light leading-relaxed mt-0 mb-4 text-gray-800 max-w-full mx-auto -->
             
             <header class="flex flex-col">
+              <span class="bg-blue-100 hover:bg-blue-200 text-blue-800 text-md text-zinc-500 dark:text-zinc-400 font-extrabold max-w-min pl-2 pr-2 rounded">{frontmatter.category}</span>
+              
+                <!-- <a href="#" class=" text-xs font-semibold mr-2 px-2.5 py-0.5 dark:bg-blue-200 dark:text-blue-800 dark:hover:bg-blue-300 font-extrabold">{frontmatter.category}</a> -->
+            
               <h1 class="mt-6 text-black dark:text-white sm:text-7xl font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">{frontmatter.title}
-                <span class="block text-sm text-zinc-500 dark:text-zinc-400 font-thin">{frontmatter.authors}</span>
+                <span class="block text-xl text-zinc-500 dark:text-zinc-400 font-thin">By {frontmatter.authors} | Published on <time
+                  datetime="2022-09-05"
+                  class="order-first text-xl text-zinc-500 dark:text-zinc-400"
+                >
+                  <span>{frontmatter.date}</span>
+                </time>
+              </span>
               </h1>
               
-              <time
-                datetime="2022-09-05"
-                class="order-first flex items-center text-base text-zinc-500 dark:text-zinc-400"
-              >
-                <span>{frontmatter.date}</span>
-              </time>
+              
             </header>
 
 

@@ -2,6 +2,7 @@
 layout: ../../layouts/BaseLayout.astro
 
 title: 'Microsoft Azure Services'
+category: 'Cloud'
 date: '2021-01-12'
 lastmod: '2021-02-01'
 tags: ['Microsoft', 'Azure', 'Cloud Native']
