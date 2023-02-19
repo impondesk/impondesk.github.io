@@ -31,7 +31,10 @@ import Sidebar from './Sidebar.astro';
                 <div class="p-6 pb-12 m-4 mx-auto -mt-16 space-y-6 lg:max-w-2xl sm:px-10 sm:mx-12 lg:rounded-md bg-gray-900">
                   <span class="bg-blue-100 hover:bg-blue-200 text-blue-800 text-md text-zinc-500 dark:text-zinc-400 font-extrabold max-w-min pl-2 pr-2 rounded">{frontmatter.category}</span>
                   <div class="space-y-2 shadow-3xl">
-                    <a rel="noopener noreferrer" href="#" class="inline-block text-2xl font-semibold sm:text-3xl mb-0	 mt-6 text-black dark:text-white font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600" style="margin-top:0px;">{frontmatter.title}</a>
+                    <!-- <img src="https://avatars.githubusercontent.com/u/6844498?s=200&v=4" class="w-20" /> -->
+                    <a rel="noopener noreferrer" href="#" class="inline-block text-2xl font-semibold sm:text-3xl mb-0	 mt-6 text-black dark:text-white font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600" style="margin-top:0px;">
+                      
+                      {frontmatter.title}</a>
                     <p class="text-xs dark:text-gray-400">By
                       <a rel="noopener noreferrer" href="#" class="text-xs hover:underline">{frontmatter.authors} • {frontmatter.date}</a>
                     </p>
@@ -80,9 +83,12 @@ import Sidebar from './Sidebar.astro';
 
             <div class="flex items-center mt-8 space-x-4">
               <img src="https://sorcererhat.com/images/about/memoji_felipe.png" alt="" class="w-10 h-10 rounded-full dark:bg-gray-500">
-              <div>
-                <h3 class="text-sm font-medium">{frontmatter.authors}</h3>
-                <time datetime="2021-02-18" class="text-sm dark:text-gray-400">{frontmatter.date}</time>
+              <div class="font-extrabold">
+                <h3 class="text-sm">
+                  <span class="text-lg">{frontmatter.authors}</span>
+                  <small class="block">Just another tech nerd!</small> 
+                  <small><time datetime="2021-02-18" class="text-sm dark:text-gray-400">{frontmatter.date}</time></small> 
+                </h3>
               </div>
             </div>
           </div>
@@ -90,7 +96,6 @@ import Sidebar from './Sidebar.astro';
         </div>
       </div>
 
-    </div>
 
     </main>
       

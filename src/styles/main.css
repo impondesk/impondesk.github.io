@@ -27,5 +27,5 @@ a {
 }
 
 a {
-    @apply text-blue-600 hover:text-white visited:text-gray-400
+    @apply text-blue-600 hover:text-blue-50 visited:text-blue-50
  }

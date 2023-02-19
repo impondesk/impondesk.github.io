@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/BaseLayout.astro
 
-title: 'Microsoft Azure Services'
+logo: 'https://avatars.githubusercontent.com/u/6844498?s=200&v=4'
+title: 'Microsoft Azure - Cloud Computing Services'
 category: 'Cloud'
 date: '2021-01-12'
 lastmod: '2021-02-01'
@@ -18,7 +19,12 @@ image: 'https://images.unsplash.com/photo-1570063578733-6a33b69d1439?ixlib=rb-4.
 
 <!-- <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Desktop-hero_jan?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1920&qlt=75" /> -->
 
+The Azure cloud platform is more than 200 products and cloud services designed to help you bring new solutions to life—to solve today’s challenges and create the future. Build, run and manage applications across multiple clouds, on-premises and at the edge, with the tools and frameworks of your choice.
+
 The Azure cloud services are trained and created to deploy and manage even complex apps, through virtual infrastructure. It supports various programming languages, devices, databases, operating systems, and extensive frameworks. Therefore, Azure services intended for the professionals and enterprises offer all-around alternatives to the traditional means of organizational processes, with top **Azure services** greatly improving the performance.
+
+ - [What is Cloud Computing?](https://azure.microsoft.com/en-in/resources/cloud-computing-dictionary/what-is-cloud-computing/)
+ - [How do I choose a cloud service provider?](https://azure.microsoft.com/en-in/resources/cloud-computing-dictionary/choosing-a-cloud-service-provider/)
 
 # Azure Active Directory
 
@@ -57,10 +63,11 @@ Interestingly, CosmosDB ensures 99.99% availability while restricting read and w
 
 # DevOps
 
-As you start using Microsoft Azure services, the software as a service (SaaS) platform of DevOps will be needed to develop and deploy software. It offers easy integration facilities with famous tools in the industry and can help orchestrate a DevOps toolchain. DevOps services prove the agility of the tools by tracking, planning, and discussing their work among other teams.
+As you start using Microsoft Azure services, the software as a service (SaaS) platform of DevOps will be needed to develop and deploy software. It offers easy integration facilities with famous tools in the industry and can help orchestrate a DevOps toolchain. DevOps services prove the agility of the tools by tracking, planning, and discussing their work among other teams. 
 
 For most of the users, DevOps are greatly beneficial to their applications, irrespective of the platform, language, or cloud. They also enable faster delivery through active planning and better collaboration. Using the efficient tools, this Azure service ensures an access to unlimited, cloud-hosted private Git repository where the application coding welcomes collaboration with advanced file management.
 
+[Learn more about DevOps.](https://azure.microsoft.com/en-in/resources/cloud-computing-dictionary/what-is-devops/)
 
 # Azure Backup
 
@@ -81,6 +88,24 @@ Logic apps make it very easy for Electronic Data Interchange (EDI) standards to 
 A virtual machine is generally called an image, a file that can behave like an actual computer. Microsoft Azure offers the addition of virtual machines in its Compute category, thus creating Windows or Linux systems within a few seconds on a physical computer. The virtual machine stays separate from the rest of the computer, thus providing a perfect space to test beta applications, access virus-infected data, create system backups and run applications that were not natively intended to be run on the given operating system.
 
 Using Hypervisor’s management, Microsoft Azure also enables running multiple virtual machines on the same physical computer. Each virtual machine has its own virtual hardware along with specifications for CPU, memory, hard drive, network, etc. Virtual Machines can reduce the cost of investing in physical machines along with the added maintenance cost, power charges, and cooling facilities.
+
+
+# Solutions do the work for you
+
+- Healthcare - Develop solutions for proactive, personalised healthcare.
+- Financial Services - Better serve customers, empower employees and optimise risk management.
+- Government - Build secure solutions to better serve and protect your citizens.
+- Retail - Deliver personal, seamless and differentiated experiences.
+- Manufacturing - Respond quicker to customer feedback and market trends.
+
+
+# References 
+
+Visit the following resources to learn more
+
+- [Get started with Azure](https://azure.microsoft.com/en-in/get-started/)
+- [Azure Dictionary](https://azure.microsoft.com/en-in/resources/cloud-computing-dictionary/)
+
 
 
 </main>
